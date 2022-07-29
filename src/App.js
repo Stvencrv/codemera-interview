@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Content syle={{ marging: 10. }}>
-       <h1>Todo App With UseReducer</h1>
+       <h1>Todo List</h1>
         <TodosDispatch.Provider value={dispatch}>
           <TodosWrapper todos={state.todos} currentView={state.currentView} />
         </TodosDispatch.Provider> 

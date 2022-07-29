@@ -29,7 +29,7 @@ export default function TodosWrapper(props) {
   return (
       <>
         <TodoForm />
-        <Tabs defaultActiveKey="all" onChange={handleTabChange}>
+        <Tabs style={{maxWidth: "50%"}} defaultActiveKey="all" onChange={ handleTabChange }>
             <TabPane tab={`All (${filterTodos("all").length})`} key="all" />
             <TabPane tab={`Done (${filterTodos("done").length})`} key="done" />
             <TabPane
@@ -42,7 +42,9 @@ export default function TodosWrapper(props) {
             itemLayout="horizontal"
             bordered={true}
             dataSource={filterTodos(currentView)}
-            renderItem={(todo, index) => (
+           style={{maxWidth: "50%"}}    
+          renderItem={ (todo, index) => (
+              
             <TodoItem todo={todo} id={index} key={`todo_${index}`} />
             )}
             locale={{ emptyText: "No to-dos found." }}
