@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Input, Button, Row, Col } from 'antd';
-import TodoDispatch from '../../context/TodoDispatch';
-import { add } from '../../actions/todoActions';
+import TodoDispatch from "../../context/TodoDispatch";
+import { add } from "../../actions/todoActions";
 
 const TodoForm = () => {
     const dispatch = useContext(TodoDispatch);
