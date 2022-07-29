@@ -1,15 +1,10 @@
 import { useReducer } from "react";
-import TodosDispatch from "./providers/todoProvider";
+import TodosDispatch from "./providers/todoDispatch";
 import TodosWrapper from "./wrappers/todoWrapper";
-import todosReducer, { initialState } from "./reducers/todosReducer";
-
-import "antd/dist/antd.css";
-import "./styles.css";
+import todosReducer, { initialState } from "./reducers/todoReducer";
 
 function App() {
   const [state, dispatch] = useReducer(todosReducer, initialState);
-
-  console.log(state);
 
   return (
     <div className="App">

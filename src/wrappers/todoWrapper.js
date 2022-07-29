@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { List, Tabs } from 'antd';
 import TodoItem from "./../components/Todo/TodoItem";
 import TodoForm from "./../components/Todo/TodoForm";
-import TodosDispatch from "../../providers/todoProvider";
+import TodosDispatch from "../providers/todoDispatch";
 import { changeView } from "../actions/todoActions";
 
 const TabPane = Tabs.TabPane;

@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 import { Input, Button, Row, Col } from 'antd';
-import TodoDispatch from "../../context/TodoDispatch";
+import TodosDispatch from "../../providers/todoDispatch";
 import { add } from "../../actions/todoActions";
 
 const TodoForm = () => {
-    const dispatch = useContext(TodoDispatch);
+    const dispatch = useContext(TodosDispatch);
     const [value, setValue] = useState('');
 
     const handleChange = (e) => {

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { List, Checkbox } from "antd";
-import { toggleTodo, remove } from "../../actions/todosActions";
-import TodosDispatch from "../../providers/todoProvider.js";
+import { toggleTodo, remove } from "../../actions/todoActions";
+import TodosDispatch from "../../providers/todoDispatch";
 import { DeleteIcon } from './DeleteIcon';
 
 export const TodoItem = (props) => {
