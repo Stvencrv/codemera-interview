@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import TodosDispatch from "./providers/todoDispatch";
 import TodosWrapper from "./wrappers/todoWrapper";
 import todosReducer, { initialState } from "./reducers/todoReducer";
+import './styles/index.css';
 
 function App() {
   const [state, dispatch] = useReducer(todosReducer, initialState);

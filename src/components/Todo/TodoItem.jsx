@@ -1,8 +1,7 @@
 import { useContext } from "react";
-import { List, Checkbox } from "antd";
+import { List, Checkbox, Button } from "antd";
 import { toggleTodo, remove } from "../../actions/todoActions";
 import TodosDispatch from "../../providers/todoDispatch";
-import { DeleteIcon } from './DeleteIcon';
 
 export const TodoItem = (props) => {
 
@@ -25,7 +24,9 @@ export const TodoItem = (props) => {
       data-item={id}
       className={isDone ? "done" : null}
       actions={[
-        <DeleteIcon onClick={handleRemove} />
+        <Button color="danger" onClick={ handleRemove } >
+          remove
+        </Button>
       ]}
     >
       <List.Item.Meta

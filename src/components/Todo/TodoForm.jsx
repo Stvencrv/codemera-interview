@@ -20,7 +20,7 @@ const TodoForm = () => {
         <Row>
             <Col span={ 24 }>
                 <Input value={ value } onChange={ handleChange } style={ { width: "80%"}} />
-                <Button type="primary" onPress={handleSubmit}>Add</Button>
+                <Button type="primary" onClick={handleSubmit}>Add</Button>
             </Col>
         </Row>
     )

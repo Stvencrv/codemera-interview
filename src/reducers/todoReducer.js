@@ -24,7 +24,7 @@ export default function reducer(state, action) {
     case "REMOVE":
       return {
         ...state,
-        todos: state.todos.filter((index) => index !== action.payload)
+        todos: state.todos.filter((item, index) => index !== action.payload)
       };
     case "TOGGLE_TODO":
       return {
