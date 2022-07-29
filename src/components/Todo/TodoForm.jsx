@@ -18,9 +18,11 @@ const TodoForm = () => {
     }
     return (    
         <Row>
-            <Col span={ 24 }>
-                <Input value={ value } onChange={ handleChange } style={ { width: "80%"}} />
-                <Button type="primary" onClick={handleSubmit}>Add</Button>
+            <Col span={ 10 } >
+                <Input value={ value } onChange={ handleChange } style={ { width: "90%"}} />
+            </Col>
+            <Col xl={true}>
+                 <Button type="primary" onClick={handleSubmit}>Add</Button>
             </Col>
         </Row>
     )
